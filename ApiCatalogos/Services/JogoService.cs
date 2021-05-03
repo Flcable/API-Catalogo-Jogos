@@ -1,4 +1,6 @@
-﻿using ApiCatalogos.InputModel;
+﻿using ApiCatalogos.Entities;
+using ApiCatalogos.Exceptions;
+using ApiCatalogos.InputModel;
 using ApiCatalogos.Repositories;
 using ApiCatalogos.ViewModel;
 using System;

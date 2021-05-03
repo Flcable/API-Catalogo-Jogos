@@ -1,4 +1,5 @@
-﻿using ApiCatalogos.InputModel;
+﻿using ApiCatalogos.Exceptions;
+using ApiCatalogos.InputModel;
 using ApiCatalogos.Services;
 using ApiCatalogos.ViewModel;
 using Microsoft.AspNetCore.Http;
@@ -97,7 +98,7 @@ namespace ApiCatalogos.Controllers.V1
 
                 return Ok();
             }
-            catch (Exception ex) //(JogoNaoCadastradoException ex)
+            catch (JogoNaoCadastradoException ex)
             {
                 return NotFound("Não existe este jogo");
             }
@@ -119,7 +120,7 @@ namespace ApiCatalogos.Controllers.V1
 
                 return Ok();
             }
-            catch (Exception ex ) //(JogoNaoCadastradoException ex)
+            catch (JogoNaoCadastradoException ex)
             {
                 return NotFound("Não existe este jogo");
             }
@@ -140,7 +141,7 @@ namespace ApiCatalogos.Controllers.V1
 
                 return Ok();
             }
-            catch (Exception ex) //(JogoNaoCadastradoException ex)
+            catch (JogoNaoCadastradoException ex)
             {
                 return NotFound("Não existe este jogo");
             }
