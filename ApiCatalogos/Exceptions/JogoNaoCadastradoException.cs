@@ -5,9 +5,9 @@ using System.Threading.Tasks;
 
 namespace ApiCatalogos.Exceptions
 {
-    public class JogoNaoCadastradoExceptions : Exception
+    public class JogoNaoCadastradoException : Exception
     {
-        public JogoNaoCadastradoExceptions()
+        public JogoNaoCadastradoException()
             : base("Este jogo não está cadastrado")
         {
 
